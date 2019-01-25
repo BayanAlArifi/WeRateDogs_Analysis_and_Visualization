@@ -3,9 +3,11 @@
 Wrangling, analyzing and visualizing data gathered from WeRateDogs ([@dog_rates](https://twitter.com/dog_rates)) Twitter account, and an image prediction algorithm results.
 
 
+
 ## Introduction
 
 This reports on data wrangling steps: gather, assess, and clean of the [@dog_rates](https://twitter.com/dog_rates) tweets. This Twitter account rates dogs with humorous commentary. The rating denominator is usually 10. However, the numerators are usually greater than 10. This aspect was not cleaned as it is part of the humor and popularity of WeRateDogs. I explore the account’s popularity over time, the top tweet in terms of number of retweets or favorite, the top dog breed, and top dog stages. On average, the [@dog_rates](https://twitter.com/dog_rates) tweet length is 120 characters.
+
 
 
 ## Gathering Data
@@ -20,6 +22,7 @@ The tweet image predictions, i.e., what breed of dog (or other object, animal, e
 
 - **Extract data from twitter API**
 Retweet count and favorite count (likes) are two of the notable column omissions from the Twitter archive. Fortunately, this additional data can be gathered, along with any additional interesting data by using tweepy library. The tweet IDs in the [@dog_rates](https://twitter.com/dog_rates) Twitter archive were used to query the Twitter API for each tweet's JSON data, and store each tweet's entire set of JSON data in a file called tweet_json.txt.
+
 
 
 ## Assessing Data
@@ -40,6 +43,7 @@ In this step data was assessed visually and programmatically using pandas librar
 1. The columns doggo, floofer, pupper and puppo represent the dog stages, and should be collapsed into one column named dog_stage.
 2. All three dataframes should be merged into one clean dataframe since they all hold information about the same entity; tweet.
 3. Sort the timestamp column.
+
 
 
 ## Cleaning Data
