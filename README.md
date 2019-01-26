@@ -34,6 +34,7 @@ The tweet image predictions, i.e., what breed of dog (or other object, animal, e
 - **Extract data from twitter API**
 Retweet count and favorite count (likes) are two of the notable column omissions from the Twitter archive. Fortunately, this additional data can be gathered, along with any additional interesting data by using tweepy library. The tweet IDs in the [@dog_rates](https://twitter.com/dog_rates) Twitter archive were used to query the Twitter API for each tweet's JSON data, and store each tweet's entire set of JSON data in a file called tweet_json.txt.
 
+![image.png](https://github.com/BayanAlArifi/WeRateDogs_Analysis_and_Visualization/blob/master/WeRateDogs.png)
 
 
 <a id='assessing'></a>
