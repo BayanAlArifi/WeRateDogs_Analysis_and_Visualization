@@ -3,13 +3,24 @@
 Wrangling, analyzing and visualizing data gathered from WeRateDogs ([@dog_rates](https://twitter.com/dog_rates)) Twitter account, and an image prediction algorithm results.
 
 
+## Table of Contents
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#gathering">Gathering Data</a></li>
+<li><a href="#assessing">Assessing Data</a></li>
+<li><a href="#cleaning">Cleaning Data</a></li>
+</ul>
 
+
+
+<a id='introduction'></a>
 ## Introduction
 
 This reports on data wrangling steps: gather, assess, and clean of the [@dog_rates](https://twitter.com/dog_rates) tweets. This Twitter account rates dogs with humorous commentary. The rating denominator is usually 10. However, the numerators are usually greater than 10. This aspect was not cleaned as it is part of the humor and popularity of WeRateDogs. I explore the account’s popularity over time, the top tweet in terms of number of retweets or favorite, the top dog breed, and top dog stages. On average, the [@dog_rates](https://twitter.com/dog_rates) tweet length is 120 characters.
 
 
 
+<a id='gathering'></a>
 ## Gathering Data
 
 The data was gathered from multiple sources, as listed below. The twitter archive is great, but it only contains very basic tweet information. Additional gathering, then assessing and cleaning was required for "Wow!"-worthy analyses and visualizations.
@@ -25,6 +36,7 @@ Retweet count and favorite count (likes) are two of the notable column omissions
 
 
 
+<a id='assessing'></a>
 ## Assessing Data
 
 In this step data was assessed visually and programmatically using pandas library. Furthermore, dirty data (content or “quality” issues) and messy data (structural or “tidiness” issues) were distinguished identified. A summary of the findings is as follows;
@@ -46,6 +58,7 @@ In this step data was assessed visually and programmatically using pandas librar
 
 
 
+<a id='cleaning'></a>
 ## Cleaning Data
 
 In this step all the data was cleaned to fix the quality and tidiness issues identified in the Assessing Data step. Each step of the data cleaning process (defining, coding, and testing) was identified. The cleaned code was then tested visually and programmatically. A summary of the cleaning done is as follows;
